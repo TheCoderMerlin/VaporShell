@@ -24,7 +24,6 @@ func configure(_ app: Application) throws {
     // UNCOMMENT-PUBLIC to serve files from /Public folder
     // app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
 
-    // UNCOMMENT-DATABASE to configure database example
     var tls = TLSConfiguration.makeClientConfiguration()
     tls.certificateVerification = .none
     app.databases.use(.mysql(

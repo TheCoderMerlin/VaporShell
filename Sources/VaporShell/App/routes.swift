@@ -15,7 +15,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import Vapor
 
-// UNCOMMENT-DATABASE to configure database example
 import Fluent
 import FluentMySQLDriver
 
@@ -27,7 +26,6 @@ func routes(_ app: Application) throws {
         return "It works!"
     }
 
-    // UNCOMMENT-DATABASE to configure database example
     // Find an employee with the specified ID
     try employeesController.getEmployeeById(app)
 
